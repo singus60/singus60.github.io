@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三人小游戏-适合三个人玩的聚会互动游戏推荐与玩法指南</title>
+<meta name="description" content="三人小游戏专题：整理适合三个人一起玩的聚会互动、对战竞技、合作闯关与休闲益智游戏，附玩法说明、选择建议与常见问题解答。">
+<meta name="keywords" content="三人小游戏,三个人玩的游戏,三人聚会游戏,三人互动游戏,三人对战游戏">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --bg:#f5f7fb;
+    --panel:#ffffff;
+    --ink:#1b2233;
+    --ink-soft:#5a6478;
+    --line:#e3e8f2;
+    --brand:#ff5c39;
+    --brand-deep:#e8411c;
+    --accent:#2f6df6;
+    --accent-soft:#eaf1ff;
+    --mint:#12b886;
+    --mint-soft:#e6f8f1;
+    --violet:#7a5cf0;
+    --violet-soft:#f0ecff;
+    --radius:16px;
+    --shadow:0 6px 24px rgba(27,34,51,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  ul,ol{list-style:none;}
+
+  .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px;}
+
+  /* ---------- Header ---------- */
+  .site-header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:16px;height:66px;
+  }
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px;}
+  .logo-mark{
+    width:34px;height:34px;border-radius:11px;
+    background:linear-gradient(135deg,var(--brand),#ff9a3c);
+    color:#fff;display:grid;place-items:center;font-size:15px;font-weight:800;
+    box-shadow:0 4px 12px rgba(255,92,57,.35);
+  }
+  .logo small{display:block;font-size:11px;font-weight:500;color:var(--ink-soft);letter-spacing:0;}
+  .main-nav{display:flex;gap:6px;flex-wrap:wrap;}
+  .main-nav a{
+    padding:8px 14px;border-radius:10px;font-size:14.5px;color:var(--ink-soft);
+    transition:.2s;font-weight:500;
+  }
+  .main-nav a:hover{background:var(--accent-soft);color:var(--accent);}
+  .nav-toggle{
+    display:none;background:none;border:1px solid var(--line);border-radius:10px;
+    padding:7px 12px;font-size:14px;color:var(--ink-soft);cursor:pointer;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:
+      radial-gradient(900px 380px at 12% -10%,rgba(255,92,57,.16),transparent 60%),
+      radial-gradient(760px 340px at 92% 0%,rgba(47,109,246,.16),transparent 62%),
+      #fff;
+    border-bottom:1px solid var(--line);
+    padding:54px 0 46px;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;}
+  .hero-tag{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--violet-soft);color:var(--violet);
+    font-size:13px;font-weight:600;padding:6px 14px;border-radius:999px;margin-bottom:18px;
+  }
+  .hero h1{font-size:38px;line-height:1.28;letter-spacing:-.5px;margin-bottom:16px;}
+  .hero h1 em{font-style:normal;color:var(--brand);}
+  .hero p.lead{font-size:16.5px;color:var(--ink-soft);max-width:640px;margin-bottom:26px;}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 24px;border-radius:12px;font-size:15px;font-weight:600;
+    cursor:pointer;border:1px solid transparent;transition:.2s;
+  }
+  .btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 18px rgba(255,92,57,.32);}
+  .btn-primary:hover{background:var(--brand-deep);transform:translateY(-1px);}
+  .btn-ghost{background:#fff;border-color:var(--line);color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+
+  .hero-side{display:grid;gap:14px;}
+  .quick-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px 20px;box-shadow:var(--shadow);
+  }
+  .quick-card h3{font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--brand);flex:none;}
+  .quick-card ul li{
+    font-size:14px;color:var(--ink-soft);padding:6px 0;
+    border-bottom:1px dashed var(--line);display:flex;justify-content:space-between;gap:10px;
+  }
+  .quick-card ul li:last-child{border-bottom:none;}
+  .quick-card ul li span{color:var(--ink);font-weight:600;}
+
+  /* ---------- Section base ---------- */
+  section{padding:54px 0;}
+  .sec-head{margin-bottom:28px;}
+  .sec-head .kicker{
+    font-size:13px;font-weight:700;letter-spacing:1.5px;color:var(--brand);
+    text-transform:uppercase;margin-bottom:8px;
+  }
+  .sec-head h2{font-size:26px;letter-spacing:-.3px;margin-bottom:10px;}
+  .sec-head p{color:var(--ink-soft);font-size:15px;max-width:760px;}
+
+  /* ---------- 类型分类 ---------- */
+  .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .cat-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 20px;box-shadow:var(--shadow);transition:.22s;
+  }
+  .cat-card:hover{transform:translateY(-4px);border-color:#cfd9ee;}
+  .cat-icon{
+    width:44px;height:44px;border-radius:13px;display:grid;place-items:center;
+    font-size:20px;margin-bottom:14px;
+  }
+  .ic-orange{background:#fff0ea;color:var(--brand);}
+  .ic-blue{background:var(--accent-soft);color:var(--accent);}
+  .ic-mint{background:var(--mint-soft);color:var(--mint);}
+  .ic-violet{background:var(--violet-soft);color:var(--violet);}
+  .cat-card h3{font-size:17px;margin-bottom:8px;}
+  .cat-card p{font-size:14px;color:var(--ink-soft);margin-bottom:12px;}
+  .cat-card .meta{font-size:12.5px;color:#8d97ab;border-top:1px dashed var(--line);padding-top:10px;}
+
+  /* ---------- 推荐列表 ---------- */
+  .rec-list{display:grid;gap:16px;}
+  .rec-item{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 24px;box-shadow:var(--shadow);
+    display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:flex-start;
+  }
+  .rec-rank{
+    width:56px;height:56px;border-radius:15px;display:grid;place-items:center;
+    font-weight:800;font-size:19px;color:#fff;
+    background:linear-gradient(135deg,var(--accent),#6ea0ff);
+  }
+  .rec-item:nth-child(2) .rec-rank{background:linear-gradient(135deg,var(--brand),#ff9a3c);}
+  .rec-item:nth-child(3) .rec-rank{background:linear-gradient(135deg,var(--mint),#5ed3ab);}
+  .rec-item:nth-child(4) .rec-rank{background:linear-gradient(135deg,var(--violet),#a795ff);}
+  .rec-item:nth-child(5) .rec-rank{background:linear-gradient(135deg,#f0a020,#ffcf6b);}
+  .rec-body h3{font-size:18px;margin-bottom:6px;}
+  .rec-body p{font-size:14.5px;color:var(--ink-soft);margin-bottom:10px;}
+  .chip-row{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    font-size:12.5px;padding:4px 11px;border-radius:999px;
+    background:var(--bg);color:var(--ink-soft);border:1px solid var(--line);
+  }
+  .chip.hot{background:#fff0ea;color:var(--brand-deep);border-color:#ffd8cc;}
+  .rec-side{
+    text-align:right;font-size:13px;color:#8d97ab;white-space:nowrap;
+  }
+  .rec-side strong{display:block;font-size:15px;color:var(--ink);margin-bottom:4px;}
+
+  /* ---------- 玩法指南 ---------- */
+  .guide-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start;}
+  .guide-main{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px 30px;box-shadow:var(--shadow);
+  }
+  .guide-main h3{font-size:19px;margin-bottom:14px;}
+  .guide-main p{font-size:15px;color:var(--ink-soft);margin-bottom:14px;}
+  .step-list{counter-reset:step;margin-top:18px;}
+  .step-list li{
+    counter-increment:step;position:relative;padding-left:44px;margin-bottom:18px;
+  }
+  .step-list li::before{
+    content:counter(step);
+    position:absolute;left:0;top:1px;
+    width:28px;height:28px;border-radius:9px;
+    background:var(--accent-soft);color:var(--accent);
+    display:grid;place-items:center;font-size:14px;font-weight:700;
+  }
+  .step-list li strong{display:block;font-size:15.5px;margin-bottom:4px;}
+  .step-list li span{font-size:14px;color:var(--ink-soft);}
+
+  .guide-side{display:grid;gap:16px;}
+  .side-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 22px;box-shadow:var(--shadow);
+  }
+  .side-card h3{font-size:16px;margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+  .side-card ul li{
+    font-size:14px;color:var(--ink-soft);padding:8px 0 8px 18px;position:relative;
+    border-bottom:1px dashed var(--line);
+  }
+  .side-card ul li:last-child{border-bottom:none;}
+  .side-card ul li::before{
+    content:"";position:absolute;left:0;top:16px;
+    width:6px;height:6px;border-radius:50%;background:var(--brand);
+  }
+  .side-card.warn{background:#fffaf7;border-color:#ffe0d5;}
+  .side-card.warn ul li::before{background:var(--brand-deep);}
+
+  /* ---------- 场景 ---------- */
+  .scene-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .scene-card{
+    border-radius:var(--radius);padding:24px 22px;border:1px solid var(--line);
+    background:var(--panel);box-shadow:var(--shadow);
+  }
+  .scene-card h3{font-size:17px;margin-bottom:10px;}
+  .scene-card p{font-size:14.5px;color:var(--ink-soft);margin-bottom:12px;}
+  .scene-card .tag{
+    display:inline-block;font-size:12.5px;padding:4px 12px;border-radius:999px;
+    background:var(--mint-soft);color:#0d8f6b;font-weight:600;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-list{display:grid;gap:12px;max-width:900px;}
+  .faq-item{
+    background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    overflow:hidden;box-shadow:var(--shadow);
+  }
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    padding:18px 22px;font-size:15.5px;font-weight:600;color:var(--ink);
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+    font-family:inherit;
+  }
+  .faq-q .plus{
+    flex:none;width:24px;height:24px;border-radius:8px;background:var(--accent-soft);
+    color:var(--accent);display:grid;place-items:center;font-size:16px;font-weight:700;
+    transition:.25s;
+  }
+  .faq-item.open .plus{transform:rotate(45deg);background:var(--brand);color:#fff;}
+  .faq-a{
+    max-height:0;overflow:hidden;transition:max-height .3s ease;
+  }
+  .faq-a p{
+    padding:0 22px 20px;font-size:14.5px;color:var(--ink-soft);
+  }
+  .faq-item.open .faq-a{max-height:340px;}
+
+  /* ---------- Footer ---------- */
+  .site-footer{
+    background:#171d2b;color:#a9b2c4;padding:48px 0 26px;margin-top:20px;
+  }
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;margin-bottom:32px;}
+  .footer-grid h4{color:#fff;font-size:15px;margin-bottom:14px;}
+  .footer-grid p,.footer-grid li{font-size:13.5px;line-height:1.9;}
+  .footer-grid li a:hover{color:#fff;}
+  .footer-bottom{
+    border-top:1px solid #2a3244;padding-top:20px;
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    font-size:13px;color:#7c869c;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:1000px){
+    .hero-grid{grid-template-columns:1fr;gap:30px;}
+    .cat-grid{grid-template-columns:repeat(2,1fr);}
+    .guide-wrap{grid-template-columns:1fr;}
+    .scene-grid{grid-template-columns:1fr 1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:720px){
+    .header-inner{height:auto;padding:12px 0;flex-wrap:wrap;}
+    .nav-toggle{display:block;}
+    .main-nav{
+      display:none;width:100%;flex-direction:column;gap:2px;
+      padding-bottom:10px;
+    }
+    .main-nav.open{display:flex;}
+    .main-nav a{padding:10px 12px;}
+    .hero{padding:36px 0 34px;}
+    .hero h1{font-size:27px;}
+    .hero p.lead{font-size:15px;}
+    section{padding:38px 0;}
+    .sec-head h2{font-size:21px;}
+    .cat-grid{grid-template-columns:1fr;}
+    .rec-item{grid-template-columns:1fr;gap:14px;}
+    .rec-rank{width:46px;height:46px;font-size:16px;}
+    .rec-side{text-align:left;}
+    .scene-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr;gap:22px;}
+    .guide-main{padding:22px 20px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">3</span>
+      <span>三人小游戏
+        <small>三个人也能玩得尽兴</small>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="展开导航">菜单</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#types">游戏类型</a>
+      <a href="#recommend">热门推荐</a>
+      <a href="#guide">玩法指南</a>
+      <a href="#scene">适用场景</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-tag">聚会 · 开黑 · 合作 · 对战</span>
+        <h1>三个人的时候，玩什么<em>小游戏</em>最合适？</h1>
+        <p class="lead">
+          三人局介于双人对抗和多人混战之间，既不会因为人数太少而冷场，也不会因为人太多而难以组织。
+          本页按互动聚会、对战竞技、合作闯关、休闲益智四类整理适合三个人玩的游戏方向，
+          并给出挑选思路、开局准备和常见问题，帮你快速决定下一局玩什么。
+        </p>
+        <div class="hero-actions">
+          <a href="#recommend" class="btn btn-primary">查看热门推荐</a>
+          <a href="#guide" class="btn btn-ghost">了解挑选方法</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="quick-card">
+          <h3><span class="dot"></span>三人局快速判断</h3>
+          <ul>
+            <li>人数特点 <span>3 人</span></li>
+            <li>常见时长 <span>5–30 分钟/局</span></li>
+            <li>核心诉求 <span>不冷场、易上手</span></li>
+            <li>推荐节奏 <span>轮流发言或回合制</span></li>
+          </ul>
+        </div>
+        <div class="quick-card">
+          <h3><span class="dot" style="background:var(--accent)"></span>选游戏先问三件事</h3>
+          <ul>
+            <li>线下同桌还是线上联机 <span>决定形式</span></li>
+            <li>想要对抗还是合作 <span>决定氛围</span></li>
+            <li>能投入多少时间 <span>决定体量</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 游戏类型 -->
+  <section id="types">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Game Types</div>
+        <h2>三人小游戏的四种主要类型</h2>
+        <p>三人局的魅力在于结构灵活：可以两两结盟，也可以三人混战，还可以一人主导、两人配合。先确定类型，再挑具体玩法，效率最高。</p>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-card">
+          <div class="cat-icon ic-orange">🎉</div>
+          <h3>聚会互动类</h3>
+          <p>以语言表达、反应速度和临场表演为主，规则简单，几乎不需要道具，适合饭桌、KTV、候场等零散时间。</p>
+          <div class="meta">关键词：破冰 · 轮流 · 笑点密集</div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon ic-blue">⚔️</div>
+          <h3>对战竞技类</h3>
+          <p>三人各自为战或临时结盟，强调策略判断与心理博弈。关键在于规则要能避免“两人联手压制一人”的失衡。</p>
+          <div class="meta">关键词：博弈 · 结盟 · 反制</div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon ic-mint">🤝</div>
+          <h3>合作闯关类</h3>
+          <p>三人共同面对关卡或目标，分工明确、沟通频繁。适合关系亲近、愿意一起讨论的玩家组合。</p>
+          <div class="meta">关键词：分工 · 沟通 · 共同目标</div>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon ic-violet">🧩</div>
+          <h3>休闲益智类</h3>
+          <p>以推理、答题、拼图、数字逻辑为主，节奏平缓，适合安静环境，也方便中途加入或退出。</p>
+          <div class="meta">关键词：动脑 · 低体力 · 随时暂停</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门推荐 -->
+  <section id="recommend" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Recommend</div>
+        <h2>适合三个人玩的方向推荐</h2>
+        <p>以下按玩法方向而非具体产品整理，方便你根据手边条件灵活替换成同类游戏。每一条都标注了人数适配的理由。</p>
+      </div>
+      <div class="rec-list">
+
+        <article class="rec-item">
+          <div class="rec-rank">01</div>
+          <div class="rec-body">
+            <h3>轮流描述与猜测类</h3>
+            <p>一人描述、两人抢答，或者三人轮流描述同一个词。三人规模刚好让节奏紧凑，不会出现长时间等待，也不容易因为人多而混乱。</p>
+            <div class="chip-row">
+              <span class="chip hot">零道具</span>
+              <span class="chip">语言表达</span>
+              <span class="chip">5–15 分钟</span>
+              <span class="chip">适合破冰</span>
+            </div>
+          </div>
+          <div class="rec-side"><strong>上手难度</strong>低</div>
+        </article>
+
+        <article class="rec-item">
+          <div class="rec-rank">02</div>
+          <div class="rec-body">
+            <h3>三人回合制对战</h3>
+            <p>每人轮流行动，通过资源分配、位置选择或出牌顺序争夺优势。三人局的关键是设计反制机制，让暂时落后的一方仍有翻盘空间。</p>
+            <div class="chip-row">
+              <span class="chip hot">策略博弈</span>
+              <span class="chip">回合制</span>
+              <span class="chip">15–30 分钟</span>
+              <span class="chip">可重复开局</span>
+            </div>
+          </div>
+          <div class="rec-side"><strong>上手难度</strong>中</div>
+        </article>
+
+        <article class="rec-item">
+          <div class="rec-rank">03</div>
+          <div class="rec-body">
+            <h3>三人分工合作闯关</h3>
+            <p>把任务拆成三条线，每人负责一部分，再通过信息共享拼出完整答案。三人是合作类游戏的舒适人数，沟通成本低、参与感强。</p>
+            <div class="chip-row">
+              <span class="chip hot">团队协作</span>
+              <span class="chip">信息共享</span>
+              <span class="chip">20–40 分钟</span>
+              <span class="chip">适合熟人</span>
+            </div>
+          </div>
+          <div class="rec-side"><strong>上手难度</strong>中</div>
+        </article>
+
+        <article class="rec-item">
+          <div class="rec-rank">04</div>
+          <div class="rec-body">
+            <h3>反应速度与手速比拼</h3>
+            <p>看到信号后抢先做出反应，三人同时参与、每局只需几十秒。节奏快、笑点多，适合作为正式游戏之间的调剂。</p>
+            <div class="chip-row">
+              <span class="chip hot">短平快</span>
+              <span class="chip">反应力</span>
+              <span class="chip">1–3 分钟/局</span>
+              <span class="chip">可连打多局</span>
+            </div>
+          </div>
+          <div class="rec-side"><strong>上手难度</strong>低</div>
+        </article>
+
+        <article class="rec-item">
+          <div class="rec-rank">05</div>
+          <div class="rec-body">
+            <h3>推理与身份判断类</h3>
+            <p>三人各自掌握部分信息，通过提问和排除找出唯一答案。人数少意味着发言机会多，每个人都不会被边缘化。</p>
+            <div class="chip-row">
+              <span class="chip hot">逻辑推理</span>
+              <span class="chip">提问排除</span>
+              <span class="chip">10–25 分钟</span>
+              <span class="chip">安静环境更佳</span>
+            </div>
+          </div>
+          <div class="rec-side"><strong>上手难度</strong>中</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 玩法指南 -->
+  <section id="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">How to Choose</div>
+        <h2>三个人挑游戏的四步思路</h2>
+        <p>与其纠结具体玩哪一款，不如先按下面的顺序把条件缩小，剩下的选择通常就很清楚了。</p>
+      </div>
+      <div class="guide-wrap">
+        <div class="guide-main">
+          <h3>从条件出发，而不是从名字出发</h3>
+          <p>
+            三人小游戏没有绝对的最好，只有最合适。同一款游戏，在安静的咖啡馆和在热闹的聚会上体验完全不同。
+            先确认场地、时间、设备和你身边这两个人的偏好，再去看具体玩法，能省下大量试错时间。
+          </p>
+          <ol class="step-list">
+            <li>
+              <strong>先确定场地与设备</strong>
+              <span>线下面对面适合语言类和道具类；有网络和手机或电脑时，可以选联机对战与合作闯关。场地嘈杂时避开需要听清细节的推理类。</span>
+            </li>
+            <li>
+              <strong>判断想要的氛围</strong>
+              <span>想热闹就选反应类和互动类，想认真较量就选回合制对战，想一起放松就选合作闯关。氛围定下来，类型基本就定了。</span>
+            </li>
+            <li>
+              <strong>评估可投入的时间</strong>
+              <span>只有十分钟就选单局极短的玩法，能连打多局；有整块时间再考虑需要讲解规则、铺垫剧情的体量较大的玩法。</span>
+            </li>
+            <li>
+              <strong>确认三人的接受度</strong>
+              <span>三人局最怕有人全程旁观。优先选择每个人都有独立行动机会的玩法，避开明显偏向两人互动的设计。</span>
+            </li>
+          </ol>
+        </div>
+        <aside class="guide-side">
+          <div class="side-card">
+            <h3><span class="dot" style="background:var(--mint)"></span>三人局的天然优势</h3>
+            <ul>
+              <li>人数刚好，不需要凑人也不用分组</li>
+              <li>发言与行动机会平均，不易冷场</li>
+              <li>可以临时结盟，也可以随时翻脸</li>
+              <li>规则讲解时间短，开局快</li>
+            </ul>
+          </div>
+          <div class="side-card warn">
+            <h3><span class="dot" style="background:var(--brand-deep)"></span>需要注意的地方</h3>
+            <ul>
+              <li>避免设计上必然形成“二打一”的玩法</li>
+              <li>规则要提前讲清，中途改规则容易起争执</li>
+              <li>胜负心强的组合建议优先合作类</li>
+              <li>长时间连续对战注意安排休息</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 适用场景 -->
+  <section id="scene" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Scenarios</div>
+        <h2>三种常见场景的搭配建议</h2>
+        <p>同样是三个人，在不同场景下的最优选择差别很大。下面按最常见的三类场合给出搭配思路。</p>
+      </div>
+      <div class="scene-grid">
+        <article class="scene-card">
+          <h3>聚会与饭桌间隙</h3>
+          <p>环境偏吵、注意力分散，适合规则一句话能讲完、单局几十秒到几分钟的玩法。语言互动类和反应类比拼最能带动气氛，也不需要额外准备。</p>
+          <span class="tag">优先：短、快、笑点多</span>
+        </article>
+        <article class="scene-card">
+          <h3>居家休闲与线上开黑</h3>
+          <p>有稳定设备和网络，可以选合作闯关或回合制对战，单局时间可以放宽。三人联机的沟通成本低，适合边玩边聊，节奏由自己掌控。</p>
+          <span class="tag">优先：可存档、可连玩</span>
+        </article>
+        <article class="scene-card">
+          <h3>安静环境与动脑时段</h3>
+          <p>图书馆、通勤、深夜等场合，适合推理、答题、数字逻辑类玩法。这类游戏不需要大声交流，随时可以暂停，也不会打扰周围的人。</p>
+          <span class="tag">优先：低音量、可暂停</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">FAQ</div>
+        <h2>关于三人小游戏的常见问题</h2>
+        <p>整理了几个在三人组局时最常被问到的问题，供你参考。</p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            三个人玩，怎么避免出现两个人联手对付一个人？
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-a">
+            <p>可以从规则层面入手：选择有反制机制或隐藏信息的玩法，让结盟方无法确定对方立场；也可以采用轮换制，每局结束后重新分组，避免固定两人长期配合。如果是合作类玩法，这类问题基本不会出现。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            完全不想准备道具，有哪些方向可以选？
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-a">
+            <p>语言描述与猜测、口头出题答题、轮流接龙、比反应速度这类玩法通常只需要一张纸和一支笔，甚至完全靠口头进行。选择规则描述不超过三句话的玩法，最容易在零准备的情况下直接开局。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            三个人水平差距比较大，怎么选才不尴尬？
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-a">
+            <p>优先考虑运气成分较高或合作性质的玩法。运气成分能削弱技术差距带来的碾压感，合作玩法则把注意力从“谁赢”转移到“能不能一起完成目标”。也可以采用让分或限制条件的做法来平衡。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            三人小游戏一般一局玩多久比较合适？
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-a">
+            <p>没有固定标准，但三人局的注意力集中时间通常比多人局更短。比较舒服的节奏是单局控制在五到二十分钟之间，打完一局能自然决定是否继续，而不是被迫长时间投入。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            线上联机和线下面对面，选择上有什么不同？
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-a">
+            <p>线下更依赖语言、表情和肢体互动，适合互动聚会类；线上则不受地理位置限制，更适合规则明确、状态可视化的对战与合作玩法。如果线上线下混合，建议选择规则简单、信息展示清晰的类型，减少沟通误差。</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>三人小游戏</h4>
+        <p>围绕三个人一起玩的游戏场景，整理类型划分、挑选思路与开局建议，帮助你在不同场合快速找到合适的玩法方向。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#types">游戏类型</a></li>
+          <li><a href="#recommend">热门推荐</a></li>
+          <li><a href="#guide">玩法指南</a></li>
+          <li><a href="#scene">适用场景</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>按场景查找</h4>
+        <ul>
+          <li><a href="#scene">聚会破冰</a></li>
+          <li><a href="#scene">居家休闲</a></li>
+          <li><a href="#scene">线上开黑</a></li>
+          <li><a href="#scene">安静动脑</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>帮助信息</h4>
+        <ul>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#guide">挑选方法</a></li>
+          <li><a href="#types">类型说明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>三人小游戏 · 内容仅供玩法参考，具体规则请以实际游戏说明为准</span>
+      <span>适合三个人一起玩的游戏方向整理</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var toggle = document.getElementById('navToggle');
+    var nav = document.getElementById('mainNav');
+    if(toggle && nav){
+      toggle.addEventListener('click', function(){
+        nav.classList.toggle('open');
+      });
+      nav.addEventListener('click', function(e){
+        if(e.target.tagName === 'A'){
+          nav.classList.remove('open');
+        }
+      });
+    }
+
+    var faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(function(item){
+      var btn = item.querySelector('.faq-q');
+      if(!btn) return;
+      btn.addEventListener('click', function(){
+        var isOpen = item.classList.contains('open');
+        faqItems.forEach(function(other){
+          other.classList.remove('open');
+        });
+        if(!isOpen){
+          item.classList.add('open');
+        }
+      });
+    });
+  })();
+</script>
+
+</body>
+            </html>
