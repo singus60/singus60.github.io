@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>挺乃儿-女性体态管理与日常内衣选购参考指南</title>
+<meta name="description" content="挺乃儿是一个围绕女性体态管理与舒适内衣选购的参考站点，介绍体态支撑原理、内衣类型选择、日常穿着建议与常见问题，帮助读者理性了解挺乃儿相关信息。">
+<meta name="keywords" content="挺乃儿,体态管理,内衣选购,舒适内衣,女性体态,支撑内衣,选购指南">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --bg:#fdf8f5;
+    --panel:#ffffff;
+    --ink:#2f2a2e;
+    --ink-soft:#6c6269;
+    --line:#eadfd8;
+    --accent:#c9776f;
+    --accent-deep:#a85a54;
+    --accent-soft:#f7e7e3;
+    --sage:#7d9a86;
+    --sage-soft:#eaf1ec;
+    --radius:16px;
+    --shadow:0 10px 30px rgba(120,80,72,.08);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.75;
+    font-size:16px;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{width:min(1160px,92%);margin:0 auto;}
+
+  /* 顶部 */
+  .topbar{
+    background:linear-gradient(100deg,#fbeae6,#fdf8f5 60%);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar .wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 0;gap:16px;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand .mark{
+    width:44px;height:44px;border-radius:14px;
+    background:linear-gradient(140deg,var(--accent),#e0a49c);
+    color:#fff;display:grid;place-items:center;
+    font-size:20px;font-weight:700;letter-spacing:1px;
+    box-shadow:0 6px 16px rgba(201,119,111,.35);
+  }
+  .brand b{font-size:20px;letter-spacing:1px;display:block;}
+  .brand span{font-size:12.5px;color:var(--ink-soft);letter-spacing:.5px;}
+  .topnav{display:flex;gap:6px;flex-wrap:wrap;}
+  .topnav a{
+    padding:8px 14px;border-radius:999px;font-size:14.5px;
+    color:var(--ink-soft);transition:.2s;
+  }
+  .topnav a:hover{background:var(--accent-soft);color:var(--accent-deep);}
+  .topnav a.active{background:var(--accent);color:#fff;}
+
+  /* 首屏 */
+  .hero{padding:52px 0 44px;}
+  .hero .wrap{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;
+  }
+  .eyebrow{
+    display:inline-block;font-size:13px;letter-spacing:2px;
+    color:var(--accent-deep);background:var(--accent-soft);
+    padding:5px 14px;border-radius:999px;margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(28px,4vw,42px);
+    line-height:1.35;margin:0 0 18px;letter-spacing:1px;
+  }
+  .hero h1 em{font-style:normal;color:var(--accent-deep);}
+  .hero p.lead{
+    font-size:16.5px;color:var(--ink-soft);margin:0 0 26px;max-width:52ch;
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:12px 26px;border-radius:999px;
+    font-size:15px;font-weight:600;transition:.22s;border:1px solid transparent;
+  }
+  .btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(201,119,111,.3);}
+  .btn-primary:hover{background:var(--accent-deep);transform:translateY(-2px);}
+  .btn-ghost{border-color:var(--line);color:var(--ink-soft);background:#fff;}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent-deep);}
+
+  .hero-card{
+    background:var(--panel);border-radius:24px;padding:28px;
+    box-shadow:var(--shadow);border:1px solid var(--line);
+  }
+  .hero-card h3{margin:0 0 6px;font-size:17px;letter-spacing:.5px;}
+  .hero-card .sub{font-size:13px;color:var(--ink-soft);margin-bottom:18px;}
+  .meter{margin-bottom:16px;}
+  .meter .row{display:flex;justify-content:space-between;font-size:14px;margin-bottom:6px;color:var(--ink-soft);}
+  .bar{height:9px;border-radius:999px;background:#f1e7e3;overflow:hidden;}
+  .bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--accent),#e6b0a8);}
+  .bar.sage i{background:linear-gradient(90deg,var(--sage),#a9c2b2);}
+  .hero-card .note{font-size:12.5px;color:#9a8f95;margin:14px 0 0;}
+
+  /* 通用区块 */
+  section{padding:46px 0;}
+  .sec-head{margin-bottom:28px;}
+  .sec-head h2{
+    font-size:24px;margin:0 0 8px;letter-spacing:1px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .sec-head h2::before{
+    content:"";width:6px;height:22px;border-radius:3px;
+    background:var(--accent);display:inline-block;
+  }
+  .sec-head p{margin:0;color:var(--ink-soft);font-size:15px;}
+
+  /* 内容卡片网格 */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;transition:.24s;height:100%;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#e2cfc8;}
+  .card .tag{
+    display:inline-block;font-size:12px;padding:3px 10px;border-radius:999px;
+    background:var(--sage-soft);color:#4f6b58;margin-bottom:12px;
+  }
+  .card h3{margin:0 0 10px;font-size:17.5px;letter-spacing:.4px;}
+  .card p{margin:0;font-size:14.6px;color:var(--ink-soft);}
+
+  /* 类型对照表 */
+  .compare{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--line);background:#fff;}
+  table{width:100%;border-collapse:collapse;min-width:640px;}
+  th,td{padding:14px 18px;text-align:left;font-size:14.6px;border-bottom:1px solid var(--line);}
+  th{background:#faf1ee;color:var(--accent-deep);font-weight:600;letter-spacing:.5px;white-space:nowrap;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:hover{background:#fdf7f5;}
+  td:first-child{font-weight:600;color:var(--ink);}
+
+  /* 步骤 */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s;}
+  .step{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 20px;position:relative;
+  }
+  .step::before{
+    counter-increment:s;content:counter(s,decimal-leading-zero);
+    font-size:26px;font-weight:700;color:#f0d9d4;letter-spacing:1px;
+    display:block;margin-bottom:8px;
+  }
+  .step h3{margin:0 0 8px;font-size:16.5px;}
+  .step p{margin:0;font-size:14.3px;color:var(--ink-soft);}
+
+  /* 侧栏 + 正文 */
+  .with-aside{display:grid;grid-template-columns:1fr 320px;gap:34px;align-items:start;}
+  .article-box{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:30px;
+  }
+  .article-box h3{margin:0 0 12px;font-size:19px;}
+  .article-box p{margin:0 0 16px;color:#4a4247;font-size:15.2px;}
+  .article-box ul{margin:0 0 16px;padding-left:20px;color:#4a4247;font-size:15.2px;}
+  .article-box li{margin-bottom:8px;}
+  .article-box p:last-child,.article-box ul:last-child{margin-bottom:0;}
+
+  .aside-card{
+    background:var(--sage-soft);border-radius:var(--radius);
+    padding:24px;border:1px solid #dbe7de;margin-bottom:20px;
+  }
+  .aside-card h3{margin:0 0 12px;font-size:16.5px;color:#3f5a48;}
+  .aside-card p{font-size:14.3px;color:#4d6353;margin:0 0 12px;}
+  .aside-card ul{margin:0;padding-left:18px;font-size:14.3px;color:#4d6353;}
+  .aside-card li{margin-bottom:8px;}
+
+  /* FAQ */
+  .faq-item{
+    background:#fff;border:1px solid var(--line);border-radius:14px;
+    margin-bottom:12px;overflow:hidden;
+  }
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    padding:18px 52px 18px 22px;font-size:16px;font-weight:600;color:var(--ink);
+    font-family:inherit;position:relative;line-height:1.6;
+  }
+  .faq-q::after{
+    content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);
+    font-size:22px;color:var(--accent);font-weight:400;transition:.25s;
+  }
+  .faq-item.open .faq-q::after{content:"–";}
+  .faq-a{
+    max-height:0;overflow:hidden;transition:max-height .3s ease;
+    padding:0 22px;
+  }
+  .faq-item.open .faq-a{max-height:420px;}
+  .faq-a p{margin:0 0 18px;font-size:14.8px;color:var(--ink-soft);}
+
+  /* 提示条 */
+  .notice{
+    background:linear-gradient(100deg,#fbeae6,#fdf8f5);
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 28px;display:flex;gap:18px;align-items:flex-start;
+  }
+  .notice .ico{
+    flex:0 0 42px;height:42px;border-radius:12px;background:#fff;
+    display:grid;place-items:center;font-size:19px;color:var(--accent-deep);
+    border:1px solid var(--line);
+  }
+  .notice h3{margin:0 0 8px;font-size:16.5px;}
+  .notice p{margin:0;font-size:14.6px;color:var(--ink-soft);}
+
+  /* 页脚 */
+  footer{
+    background:#3a3236;color:#d8cfd2;padding:44px 0 24px;margin-top:20px;
+  }
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;}
+  footer h4{margin:0 0 14px;font-size:15.5px;color:#fff;letter-spacing:.6px;}
+  footer p{font-size:14px;color:#b6aaae;margin:0 0 10px;}
+  footer ul{list-style:none;margin:0;padding:0;}
+  footer li{margin-bottom:9px;font-size:14px;color:#b6aaae;}
+  footer li a:hover{color:#f0d9d4;}
+  .foot-bottom{
+    border-top:1px solid #4c4348;margin-top:32px;padding-top:18px;
+    font-size:13px;color:#9c9296;text-align:center;
+  }
+
+  /* 响应式 */
+  @media(max-width:980px){
+    .hero .wrap{grid-template-columns:1fr;gap:30px;}
+    .grid-3{grid-template-columns:repeat(2,1fr);}
+    .steps{grid-template-columns:repeat(2,1fr);}
+    .with-aside{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:640px){
+    body{font-size:15.4px;}
+    .topbar .wrap{padding:12px 0;}
+    .topnav a{padding:7px 11px;font-size:13.6px;}
+    .hero{padding:34px 0 28px;}
+    .grid-3,.grid-2,.steps{grid-template-columns:1fr;}
+    .hero-card{padding:22px;}
+    .article-box{padding:22px;}
+    section{padding:34px 0;}
+    .foot-grid{grid-template-columns:1fr;gap:24px;}
+    .notice{flex-direction:column;gap:12px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark">挺</div>
+      <div>
+        <b>挺乃儿</b>
+        <span>体态管理 · 舒适内衣参考</span>
+      </div>
+    </div>
+    <nav class="topnav" aria-label="主导航">
+      <a href="#concept" class="active">概念解读</a>
+      <a href="#types">类型对照</a>
+      <a href="#choose">选购方法</a>
+      <a href="#wear">穿着建议</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">体态与穿着参考</span>
+        <h1>关于<em>挺乃儿</em>，先弄清它解决的是什么问题</h1>
+        <p class="lead">
+          很多人在搜索「挺乃儿」时，真正想了解的其实是：如何让上半身线条看起来更挺拔、日常穿着更舒适、在支撑与自在之间找到平衡。本页从体态、内衣结构与穿着习惯三个角度，整理一份可查证的参考思路，帮助你按自己的需求做判断，而不是被单一说法带走。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#concept">从概念开始了解</a>
+          <a class="btn btn-ghost" href="#choose">直接看选购方法</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="关注要点速览">
+        <h3>关注要点速览</h3>
+        <p class="sub">以下为常见考量维度，非效果承诺</p>
+        <div class="meter">
+          <div class="row"><span>支撑感</span><span>结构设计</span></div>
+          <div class="bar"><i style="width:78%"></i></div>
+        </div>
+        <div class="meter">
+          <div class="row"><span>舒适度</span><span>面料与版型</span></div>
+          <div class="bar sage"><i style="width:86%"></i></div>
+        </div>
+        <div class="meter">
+          <div class="row"><span>贴合度</span><span>尺码匹配</span></div>
+          <div class="bar"><i style="width:70%"></i></div>
+        </div>
+        <div class="meter">
+          <div class="row"><span>日常适配</span><span>场景与搭配</span></div>
+          <div class="bar sage"><i style="width:82%"></i></div>
+        </div>
+        <p class="note">体感因人而异，建议以自身实际穿着体验为准，必要时咨询专业人士。</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 概念 -->
+  <section id="concept">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>概念解读：挺乃儿常被讨论的三个层面</h2>
+        <p>把模糊的说法拆开看，才更容易判断哪些信息与自己相关。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <span class="tag">体态层面</span>
+          <h3>上半身姿态与线条</h3>
+          <p>含胸、圆肩、肩颈前倾等习惯会影响上半身的视觉线条。改善通常依赖日常姿势调整、适度锻炼与合理支撑，而不是单靠某一件衣物解决。</p>
+        </article>
+        <article class="card">
+          <span class="tag">结构层面</span>
+          <h3>内衣的支撑结构</h3>
+          <p>肩带宽度、下围松紧、罩杯分区、侧收结构等，都会影响穿着时的稳定感与舒适度。结构是否合适，往往比外观更重要。</p>
+        </article>
+        <article class="card">
+          <span class="tag">习惯层面</span>
+          <h3>长期穿着与更换</h3>
+          <p>尺码随体重、体型变化而改变，内衣也会因洗涤和拉伸逐渐失去弹性。定期复核尺码与更换周期，是维持穿着体验的常见做法。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 类型对照 -->
+  <section id="types">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>类型对照：常见结构与适用场景</h2>
+        <p>不同结构各有侧重，按场景选择通常比追求「一种全能款」更实际。</p>
+      </div>
+      <div class="compare">
+        <table>
+          <thead>
+            <tr>
+              <th>结构类型</th>
+              <th>主要特点</th>
+              <th>相对适合的场景</th>
+              <th>需要留意</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>无钢圈包裹型</td>
+              <td>以面料弹性和罩杯分区提供包裹，压力分布较柔和</td>
+              <td>日常通勤、居家、久坐办公</td>
+              <td>支撑强度有限，剧烈活动时稳定性可能不足</td>
+            </tr>
+            <tr>
+              <td>软支撑定型型</td>
+              <td>通过定型结构或胶骨辅助塑形，兼顾一定支撑</td>
+              <td>需要外搭贴身衣物、正式场合</td>
+              <td>需确认边缘是否压痕，下围不宜过紧</td>
+            </tr>
+            <tr>
+              <td>宽肩带稳定型</td>
+              <td>肩带加宽，压力分散，长时间穿着肩部负担较小</td>
+              <td>长时间站立、外出活动</td>
+              <td>夏季或薄衣物下可能较明显</td>
+            </tr>
+            <tr>
+              <td>运动支撑型</td>
+              <td>整体包裹与固定性较强，减少活动中的晃动</td>
+              <td>跑步、健身、球类等运动</td>
+              <td>透气性与日常舒适度通常低于日常款</td>
+            </tr>
+            <tr>
+              <td>轻薄无痕型</td>
+              <td>面料轻薄平整，外搭贴身衣物时痕迹较少</td>
+              <td>薄款上衣、贴身连衣裙</td>
+              <td>支撑与塑形能力通常较弱</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 选购方法 -->
+  <section id="choose">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>选购方法：四步找到更合适的款式</h2>
+        <p>顺序很重要——先量尺码，再定结构，最后才看外观与细节。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>测量当前尺码</h3>
+          <p>在自然站立、呼吸平稳的状态下测量下围与上围，两个数据结合推算尺码。体重变化后建议重新测量。</p>
+        </div>
+        <div class="step">
+          <h3>明确主要场景</h3>
+          <p>先想清楚大部分时间用来做什么：久坐办公、日常通勤、运动，还是搭配特定衣物。场景决定结构优先级。</p>
+        </div>
+        <div class="step">
+          <h3>试穿验证细节</h3>
+          <p>重点感受下围是否随呼吸起伏、肩带是否下滑或勒痕、罩杯上缘是否空杯或压胸，抬臂转身是否位移。</p>
+        </div>
+        <div class="step">
+          <h3>记录与复购</h3>
+          <p>把合适的款式、尺码和结构记下来，作为后续复购参考，也能减少反复试错带来的时间成本。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 穿着建议 + 侧栏 -->
+  <section id="wear">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>穿着与养护建议</h2>
+        <p>合适的款式需要正确的穿着方式和养护习惯配合，体验才稳定。</p>
+      </div>
+      <div class="with-aside">
+        <div class="article-box">
+          <h3>穿着的几个实用细节</h3>
+          <p>
+            穿好之后，先做一个简单的自检：下围应贴合身体但不影响正常呼吸，能容纳一到两根手指的余量通常比较合适；肩带以能轻松放入一根手指为宜，过松容易滑落，过紧会在肩部留下明显压痕。
+          </p>
+          <ul>
+            <li>弯腰前倾再扣合，有助于让胸部自然落入罩杯，减少空杯。</li>
+            <li>调整肩带长度时两侧分别感受，不必强求完全对称。</li>
+            <li>抬手、转身、深呼吸各做一次，观察是否明显位移或上滑。</li>
+            <li>新款式建议先短时间试穿，确认无不适再长时间使用。</li>
+          </ul>
+          <h3>洗涤与更换</h3>
+          <p>
+            多数款式更适合手洗或使用洗衣袋轻柔机洗，避免高温水与强力拧干，因为高温和拉扯会加速弹性面料老化。晾晒时尽量平铺或对折悬挂，减少肩带被长时间拉伸。
+          </p>
+          <p>
+            关于更换周期，并没有统一标准。更可靠的做法是观察状态：下围明显变松、肩带失去回弹、罩杯变形或面料起球失去弹性时，就说明该考虑更换了。
+          </p>
+        </div>
+
+        <aside>
+          <div class="aside-card">
+            <h3>自检清单</h3>
+            <ul>
+              <li>下围平整，不随呼吸明显上移</li>
+              <li>肩带不滑落、不深陷肩部</li>
+              <li>罩杯上缘贴合，无空杯或压胸</li>
+              <li>侧边无卷边、无持续摩擦感</li>
+              <li>活动后位置基本稳定</li>
+            </ul>
+          </div>
+          <div class="aside-card" style="background:#faf1ee;border-color:#f0ddd7;">
+            <h3 style="color:var(--accent-deep);">需要专业的判断时</h3>
+            <p style="color:#7a5a55;">
+              如果长期存在明显肩颈不适、背部疼痛或体态困扰，仅靠调整衣物通常难以解决，建议咨询医生或康复、体态相关专业人士，获取针对性建议。
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 提示 -->
+  <section>
+    <div class="wrap">
+      <div class="notice">
+        <div class="ico">!</div>
+        <div>
+          <h3>关于信息判断的一点提醒</h3>
+          <p>
+            围绕体态与内衣的说法很多，其中不少描述带有主观色彩。建议优先关注可验证的内容，例如尺码测量方法、面料成分、结构说明与退换政策；对「立刻改变」「永久定型」之类的绝对化表述保持谨慎。身体感受是最直接的参考依据，任何穿着如果带来持续不适，都应停止使用并重新评估。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>常见问题</h2>
+        <p>整理了几个搜索中出现频率较高的疑问，供参考。</p>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">挺乃儿和体态改善是什么关系？</button>
+        <div class="faq-a">
+          <p>合适的支撑类衣物可以在穿着时提供一定的稳定感和视觉线条整理作用，但它属于穿着辅助，不能替代姿势习惯调整、肌肉锻炼或专业康复训练。若希望长期改善体态，通常需要从日常姿势、运动习惯等多方面入手。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">尺码应该怎么确定？</button>
+        <div class="faq-a">
+          <p>建议在自然站立、呼吸平稳的状态下测量下围和上围，再结合品牌提供的尺码表推算。不同品牌版型存在差异，同一尺码的实际松紧可能不同，因此试穿环节仍然重要。体重或体型发生变化后，建议重新测量。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">无钢圈款式支撑力够吗？</button>
+        <div class="faq-a">
+          <p>这与款式设计、面料弹性和个人需求有关。无钢圈款在日常场景中通常舒适度较好，但支撑强度因结构而异。如果需要较强固定性，例如运动场景，一般会建议选择专门的运动支撑款。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">肩带总是下滑怎么办？</button>
+        <div class="faq-a">
+          <p>可以先检查下围是否过松——下围支撑不足时，重量会更多转移到肩带。若下围合适仍然下滑，可能是肩带位置或版型与肩型不匹配，可尝试调整肩带长度，或选择肩带位置更靠内、宽度更合适的款式。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">多久需要更换一次？</button>
+        <div class="faq-a">
+          <p>没有统一的时间标准，主要看使用频率和实际状态。如果出现下围明显松弛、肩带回弹变差、罩杯变形或面料失去弹性等情况，就说明支撑效果已经下降，可以考虑更换。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">穿着时出现压痕正常吗？</button>
+        <div class="faq-a">
+          <p>短时间、轻微且能较快消退的痕迹通常与松紧有关，可以尝试调整尺码或穿法。如果压痕明显、持续时间长，或伴随疼痛、皮肤不适，说明当前款式或尺码可能不合适，建议更换并观察，必要时咨询专业人士。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>挺乃儿</h4>
+        <p>围绕女性体态管理与舒适内衣选购的参考内容站点，整理结构知识、选购方法与穿着建议，帮助读者按自身需求做出更清晰的判断。</p>
+        <p>本站内容为一般性信息整理，不构成医疗或专业康复建议。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#concept">概念解读</a></li>
+          <li><a href="#types">类型对照</a></li>
+          <li><a href="#choose">选购方法</a></li>
+          <li><a href="#wear">穿着与养护</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>阅读提示</h4>
+        <ul>
+          <li>尺码以实际测量为准</li>
+          <li>体感因人而异，重视试穿</li>
+          <li>持续不适应及时停用</li>
+          <li>专业问题请咨询专业人士</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      © 2025 挺乃儿 · 体态管理与舒适内衣参考内容
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.parentElement;
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(el){
+        el.classList.remove('open');
+      });
+      if(!isOpen){ item.classList.add('open'); }
+    });
+  });
+
+  document.querySelectorAll('.topnav a').forEach(function(link){
+    link.addEventListener('click', function(){
+      document.querySelectorAll('.topnav a').forEach(function(a){ a.classList.remove('active'); });
+      link.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+  </html>
